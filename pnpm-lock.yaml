@@ -32,6 +32,9 @@ importers:
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
+      easymde:
+        specifier: ^2.20.0
+        version: 2.20.0
       eslint:
         specifier: 9.29.0
         version: 9.29.0(jiti@2.4.2)
@@ -53,6 +56,9 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
+      react-simplemde-editor:
+        specifier: ^5.2.0
+        version: 5.2.0(easymde@2.20.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwindcss:
         specifier: 4.1.10
         version: 4.1.10
@@ -1262,6 +1268,9 @@ packages:
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
 
+  '@types/codemirror@5.60.16':
+    resolution: {integrity: sha512-V/yHdamffSS075jit+fDxaOAmdP2liok8NSNJnAZfDJErzOheuygHZEhAJrfmk5TEyM32MhkZjwo/idX791yxw==}
+
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
@@ -1270,6 +1279,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/marked@4.3.2':
+    resolution: {integrity: sha512-a79Yc3TOk6dGdituy8hmTTJXjOkZ7zsFYV10L337ttq/rec8lRMDBpV7fL3uLx6TgbFCa5DU/h8FmIBQPSbU0w==}
 
   '@types/node@24.0.3':
     resolution: {integrity: sha512-R4I/kzCYAdRLzfiCabn9hxWfbuHS573x+r0dJMkkzThEa7pbrcDWK+9zu3e7aBOouf+rQAciqPFMnxwr0aWgKg==}
@@ -1281,6 +1293,9 @@ packages:
 
   '@types/react@19.1.8':
     resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
+
+  '@types/tern@0.23.9':
+    resolution: {integrity: sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==}
 
   '@typescript-eslint/eslint-plugin@8.34.1':
     resolution: {integrity: sha512-STXcN6ebF6li4PxwNeFnqF8/2BNDvBupf2OPx2yWNzr6mKNGF7q49VM00Pz5FaomJyqvbXpY6PhO+T9w139YEQ==}
@@ -1607,6 +1622,12 @@ packages:
   code-inspector-plugin@0.20.12:
     resolution: {integrity: sha512-dG8m2zvkZU85FrFZImmXAhkJbK7PWS4bFX2KgQyRgOr7VlLSgQ/ZdNFiHyuP5XVUo5dMYChQ93ZeTKvjpExoHQ==}
 
+  codemirror-spell-checker@1.1.2:
+    resolution: {integrity: sha512-2Tl6n0v+GJRsC9K3MLCdLaMOmvWL0uukajNJseorZJsslaxZyZMgENocPU8R0DyoTAiKsyqiemSOZo7kjGV0LQ==}
+
+  codemirror@5.65.19:
+    resolution: {integrity: sha512-+aFkvqhaAVr1gferNMuN8vkTSrWIFvzlMV9I2KBLCWS2WpZ2+UAkZjlMZmEuT+gcXTi6RrGQCkWq1/bDtGqhIA==}
+
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -1698,6 +1719,9 @@ packages:
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
+
+  easymde@2.20.0:
+    resolution: {integrity: sha512-V1Z5f92TfR42Na852OWnIZMbM7zotWQYTddNaLYZFVKj7APBbyZ3FYJ27gBw2grMW3R6Qdv9J8n5Ij7XRSIgXQ==}
 
   electron-to-chromium@1.5.171:
     resolution: {integrity: sha512-scWpzXEJEMrGJa4Y6m/tVotb0WuvNmasv3wWVzUAeCgKU0ToFOhUW6Z+xWnRQANMYGxN4ngJXIThgBJOqzVPCQ==}
@@ -2288,6 +2312,11 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
+  marked@4.3.0:
+    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
+    engines: {node: '>= 12'}
+    hasBin: true
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -2541,6 +2570,13 @@ packages:
       '@types/react':
         optional: true
 
+  react-simplemde-editor@5.2.0:
+    resolution: {integrity: sha512-GkTg1MlQHVK2Rks++7sjuQr/GVS/xm6y+HchZ4GPBWrhcgLieh4CjK04GTKbsfYorSRYKa0n37rtNSJmOzEDkQ==}
+    peerDependencies:
+      easymde: '>= 2.0.0 < 3.0.0'
+      react: '>=16.8.2'
+      react-dom: '>=16.8.2'
+
   react-style-singleton@2.2.3:
     resolution: {integrity: sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==}
     engines: {node: '>=10'}
@@ -2778,6 +2814,9 @@ packages:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  typo-js@1.2.5:
+    resolution: {integrity: sha512-F45vFWdGX8xahIk/sOp79z2NJs8ETMYsmMChm9D5Hlx3+9j7VnCyQyvij5MOCrNY3NNe8noSyokRjQRfq+Bc7A==}
 
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
@@ -4030,11 +4069,17 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/codemirror@5.60.16':
+    dependencies:
+      '@types/tern': 0.23.9
+
   '@types/estree@1.0.8': {}
 
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/marked@4.3.2': {}
 
   '@types/node@24.0.3':
     dependencies:
@@ -4047,6 +4092,10 @@ snapshots:
   '@types/react@19.1.8':
     dependencies:
       csstype: 3.1.3
+
+  '@types/tern@0.23.9':
+    dependencies:
+      '@types/estree': 1.0.8
 
   '@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
@@ -4414,6 +4463,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  codemirror-spell-checker@1.1.2:
+    dependencies:
+      typo-js: 1.2.5
+
+  codemirror@5.65.19: {}
+
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -4503,6 +4558,14 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       es-errors: 1.3.0
       gopd: 1.2.0
+
+  easymde@2.20.0:
+    dependencies:
+      '@types/codemirror': 5.60.16
+      '@types/marked': 4.3.2
+      codemirror: 5.65.19
+      codemirror-spell-checker: 1.1.2
+      marked: 4.3.0
 
   electron-to-chromium@1.5.171: {}
 
@@ -5227,6 +5290,8 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  marked@4.3.0: {}
+
   math-intrinsics@1.1.0: {}
 
   merge2@1.4.1: {}
@@ -5526,6 +5591,13 @@ snapshots:
       use-sidecar: 1.1.3(@types/react@19.1.8)(react@19.1.0)
     optionalDependencies:
       '@types/react': 19.1.8
+
+  react-simplemde-editor@5.2.0(easymde@2.20.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      '@types/codemirror': 5.60.16
+      easymde: 2.20.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react-style-singleton@2.2.3(@types/react@19.1.8)(react@19.1.0):
     dependencies:
@@ -5845,6 +5917,8 @@ snapshots:
       reflect.getprototypeof: 1.0.10
 
   typescript@5.8.3: {}
+
+  typo-js@1.2.5: {}
 
   ufo@1.6.1: {}
 
