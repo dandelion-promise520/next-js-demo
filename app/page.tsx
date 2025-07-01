@@ -1,6 +1,6 @@
 const DashBoardPage = () => {
   return (
-    <div>DashBoardPage</div>
+    <div>仪表盘</div>
   )
 }
 
