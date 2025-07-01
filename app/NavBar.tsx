@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -6,8 +7,8 @@ import classnames from "classnames";
 
 const NavBar = () => {
   const links = [
-    { label: "DashBoard", href: "/" },
-    { label: "Issues", href: "/issues" },
+    { label: "仪表盘", href: "/" },
+    { label: "问题", href: "/issues" },
   ];
 
   const currentHref = usePathname();
