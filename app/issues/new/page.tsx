@@ -2,11 +2,13 @@
 
 import { Button, Callout, TextField } from "@radix-ui/themes";
 import MdEditor from "@/app/components/MdEditor/MdEditor";
-import { useForm, SubmitHandler, Controller } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 
 const NewIssuePage = () => {
+  const router = useRouter();
+
   const {
     handleSubmit,
     control,
@@ -24,6 +26,7 @@ const NewIssuePage = () => {
       onSubmit={handleSubmit(async (data) => {
         const res = await axios.post("/api/issues", data);
         console.log(res);
+        router.push("/issues");
       })}
     >
       <Controller
