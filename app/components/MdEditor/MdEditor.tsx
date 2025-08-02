@@ -1,5 +1,4 @@
 import "bytemd/dist/index.css";
-import "./MdEditor";
 import { Editor } from "@bytemd/react";
 import gfm from "@bytemd/plugin-gfm";
 import gemoji from "@bytemd/plugin-gemoji";
