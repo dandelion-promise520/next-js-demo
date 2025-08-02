@@ -1,12 +1,11 @@
 import "bytemd/dist/index.css";
-import "./MdEditor"
-import { Editor, Viewer } from "@bytemd/react";
+import "./MdEditor";
+import { Editor } from "@bytemd/react";
 import gfm from "@bytemd/plugin-gfm";
 import gemoji from "@bytemd/plugin-gemoji";
 import highlight from "@bytemd/plugin-highlight";
 import zhCN from "bytemd/locales/zh_Hans.json";
 import React from "react";
-
 const plugins = [
   gfm(),
   gemoji(),
