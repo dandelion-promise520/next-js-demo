@@ -23,6 +23,7 @@
     "@types/react-dom": "19.1.6",
     "autoprefixer": "10.4.21",
     "axios": "^1.11.0",
+    "bytemd": "^1.22.0",
     "classnames": "^2.5.1",
     "eslint": "9.29.0",
     "eslint-config-next": "15.3.4",
