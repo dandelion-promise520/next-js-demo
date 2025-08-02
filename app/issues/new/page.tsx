@@ -3,11 +3,8 @@
 import { Button, Callout, TextField } from "@radix-ui/themes";
 import MdEditor from "@/app/components/MdEditor/MdEditor";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
-
-interface IFormInput {
-  title: string;
-  description: string;
-}
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const NewIssuePage = () => {
   const {
@@ -20,12 +17,15 @@ const NewIssuePage = () => {
       description: "",
     },
   });
-  // 表单提交处理函数
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
-  };
+
   return (
-    <form className="max-w-3xl space-y-5" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="max-w-3xl space-y-5"
+      onSubmit={handleSubmit(async (data) => {
+        const res = await axios.post("/api/issues", data);
+        console.log(res);
+      })}
+    >
       <Controller
         name="title"
         control={control}
