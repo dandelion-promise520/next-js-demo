@@ -25,7 +25,7 @@ const NewIssuePage = () => {
       className="max-w-3xl space-y-5"
       onSubmit={handleSubmit(async (data) => {
         const res = await axios.post("/api/issues", data);
-        console.log(res);
+        console.log(res.data);
         router.push("/issues");
       })}
     >
